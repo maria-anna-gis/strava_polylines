@@ -38,7 +38,7 @@ def refresh_access_token():
     return access_token
 
 
-def is_in_austria(lat, lon):
+def is_in_aoi(lat, lon):
     """Check if a point is inside the Austria bounding box."""
     if lat is None or lon is None:
         return False
@@ -113,7 +113,7 @@ def activities_to_geojson(access_token, activities):
         start_lat, start_lon = start_latlng[0], start_latlng[1]
 
         # Filter: only activities that *start* in Austria
-        if not is_in_austria(start_lat, start_lon):
+        if not is_in_aoi(start_lat, start_lon):
             continue
 
         activity_id = act["id"]
