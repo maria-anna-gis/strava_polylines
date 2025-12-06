@@ -9,7 +9,7 @@ CLIENT_SECRET = "PUT YOUR SECRET HERE"
 REFRESH_TOKEN = "PUT YOUR REFRESH TOKEN HERE"
 
 #output file
-OUTPUT_GEOJSON = "strava_activities_austria.geojson" # rename this to what you would like. The file is currently saved to the same location as py file.
+OUTPUT_GEOJSON = "strava_activities.geojson" # rename this to what you would like. The file is currently saved to the same location as py file.
 
 #approximate bounding box (WGS84), this can be changed to any AOI
 MIN_LAT = 50
